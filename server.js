@@ -1,7 +1,3 @@
-// server.js
-// where your node app starts
-
-// init project
 var express = require('express');
 var app = express();
 
@@ -20,9 +16,6 @@ app.post("/", upload.single('upl'), function(req, res) {
   var file = req.file
   res.json({"size": file['size']})
 })
-
-
-app.post
 
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
